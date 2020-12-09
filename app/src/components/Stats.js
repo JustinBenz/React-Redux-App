@@ -18,7 +18,12 @@ export const Stats = ({ isFetching, data, error, getData }) => {
 
     return(
         <div className="parentContain">
-            <h1>{data?.profile.personaname}'s Profile</h1>
+            <div className="statsContain">
+                <img src={data?.profile.avatarfull} alt="user avi"></img>
+                <h1>{data?.profile.personaname}'s Profile</h1>
+                <h3>Estimated MMR: {data?.mmr_estimate.estimate}</h3>
+                <h3>Solo Competitive Ranking: {data?.solo_competitive_rank}</h3>
+            </div>
         </div>
     )
 }
