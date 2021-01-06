@@ -1,0 +1,24 @@
+
+body {
+    background-image: url('./../content/dotabg.jpg');
+    background-size: cover;
+}
+
+.parentContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statsContain {
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: rgba(148, 148, 148, 0.3);
+    color: white;
+    border: 2px solid;
+}
